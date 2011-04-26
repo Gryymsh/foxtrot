@@ -1,8 +1,11 @@
-require 'ffi'
-require 'bundler/setup'
+# ruby-ffi wrapper for libsmbclient
+#
+# Jason Lewis
+#
+# homepage: http://canweriotnow.github.com/foxtrot
+# repo: https://github.com/canweriotnow/foxtrot.git
 
-require File.expand_path('../foxtrot/dir', __FILE__)
-require File.expand_path('../foxtrot/file', __FILE__)
+
 
 module Foxtrot
   
