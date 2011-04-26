@@ -1,0 +1,10 @@
+# Foxtrot #
+
+Foxtrot aims to be an FFI-based wrapper for the libsmbclient library, which allows Unix systems to access SMB/CIFS (Windows) shares. It's currently extremely pre-alpha, so don't bother trying to use it... but fork it if you want to help!
+
+### Info ###
+
+Copyright (c) 2011 Jason Lewis
+Foxtrot is Free Software, available under the terms of the GNU General Public License. See LICENSE for details.
+Contact the author at jasonlewis.x at gmail dot com
+
