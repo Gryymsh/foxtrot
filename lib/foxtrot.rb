@@ -9,7 +9,7 @@
 
 module Foxtrot
   
-  LIBPATH = ::File.expand_path(::File.dirname(__FILE__)) + ::FILE::SEPARATOR
+  LIBPATH = ::File.expand_path(::File.dirname(__FILE__)) + ::File::SEPARATOR
   PATH = ::File.dirname(LIBPATH) + ::File::SEPARATOR
   
   # Returns library path. Args joined to end of path.
@@ -54,8 +54,8 @@ module Foxtrot
   
 end
 
-%w(client file dir print).each do |file|
-  require Foxtrot.libpath(['foxtrot', 'file')
+%w(wrapper client file dir print).each do |file|
+  require Foxtrot.libpath([ 'foxtrot', file ])
 end
   
 

@@ -9,7 +9,7 @@ module LibC
   attach_function :malloc, [:size_t], :pointer
   attach_function :free, [:pointer], :void
   
-  Free = library.find_symbol('free')
+  #Free = library.find_symbol('free')
   
   attach_function :memcpy, [:pointer, :pointer, :size_t], :pointer
 end
@@ -23,10 +23,10 @@ module LibSmbClient
   
   ffi_lib(LINUX + OSX + SOLARIS)
   
-  attach_function :smbc_init, [:smbc_get_auth_data_fn, :int], :int
+
   callback :smbc_get_auth_data_fn, [:string, :string, :string, :int, :string, :int, :string, :int], :void
   callback :smbc_get_auth_data_with_context_fn, [:pointer, :string, :string, :int, :string, :int, :string, :int], :void
-  
+  attach_function :smbc_init, [:smbc_get_auth_data_fn, :int], :int  
   module ClassMethods
     def open(url)
       return true

@@ -1,17 +1,17 @@
 module Foxtrot
   
   # Definitions from libsmbclient.h
-  BASE_FD = 10000
+  SMBC_BASE_FD = 10000
   
-  WORKGROUP = 1
-  SERVER = 2
-  FILE_SHARE = 3
-  PRINTER_SHARE = 4
-  COMMS_SHARE = 5
-  IPC_SHARE = 6
-  DIR = 7
-  FILE = 8
-  LINK = 9
+  SMBC_WORKGROUP = 1
+  SMBC_SERVER = 2
+  SMBC_FILE_SHARE = 3
+  SMBC_PRINTER_SHARE = 4
+  SMBC_COMMS_SHARE = 5
+  SMBC_IPC_SHARE = 6
+  SMBC_DIR = 7
+  SMBC_FILE = 8
+  SMBC_LINK = 9
   
   DOS_MODE_READONLY = 0x01
   DOS_MODE_HIDDEN = 0x02
