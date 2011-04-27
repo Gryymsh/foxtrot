@@ -1,8 +1,10 @@
 module Foxtrot
-  
+
+  # General Samba client class
   class Client
-    def initialize(args=nil)
-      true
+    include LibSmbClient
+    def initialize( url=nil, *args, &block )
+
     end
     
     

@@ -54,7 +54,7 @@ module Foxtrot
   
 end
 
-%w(wrapper client file dir print).each do |file|
+%w(wrapper client file dir printer).each do |file|
   require Foxtrot.libpath([ 'foxtrot', file ])
 end
   
