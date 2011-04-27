@@ -24,6 +24,8 @@ module LibSmbClient
   ffi_lib(LINUX + OSX + SOLARIS)
   
 
+  
+  attach_function :smbc_getFunctionAuthData, [:struct], :pointer
   callback :smbc_get_auth_data_fn, [:string, :string, :string, :int, :string, :int, :string, :int], :void
   callback :smbc_get_auth_data_with_context_fn, [:pointer, :string, :string, :int, :string, :int, :string, :int], :void
   attach_function :smbc_init, [:smbc_get_auth_data_fn, :int], :int
